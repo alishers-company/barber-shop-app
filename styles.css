@@ -211,6 +211,20 @@ body {
 }
 .integration-chip:hover { border-color: color-mix(in srgb, var(--accent) 25%, transparent); transform: translateY(-1px); }
 
+/* Booking */
+.booking-section {
+  margin-top: 16px; padding: 36px; background: var(--surface);
+  border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius-lg);
+}
+.booking-placeholder {
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  padding: 40px 24px; text-align: center;
+  border: 2px dashed color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: var(--radius); background: color-mix(in srgb, var(--accent) 4%, transparent);
+}
+.booking-note { font-size: 14px; color: var(--muted); }
+.nav-link--active { background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent) !important; }
+
 /* CTA */
 .cta-section { margin-top: 16px; }
 .cta-inner {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>barber shop app</title>
+    <title>Classic Cut Barbershop — Book Online</title>
     <meta
       id="meta-description"
       name="description"
@@ -12,25 +12,25 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-starter="landing">
-    <div class="app-shell" data-testid="site-shell">
+    <div id="site-shell" class="app-shell" data-testid="site-shell">
       <header class="app-header">
         <div class="header-brand">
-          <div class="brand-mark">b</div>
-          <span class="brand-name">barber shop app</span>
+          <div class="brand-mark">&#9988;</div>
+          <span class="brand-name">Classic Cut Barbershop</span>
         </div>
-        <nav class="header-nav" data-testid="primary-nav"><a href="#home" class="nav-link">Home</a></nav>
+        <nav id="primary-nav" class="header-nav" data-testid="primary-nav"><a href="#hero-section" class="nav-link nav-link--active">Home</a><a href="#book" class="nav-link">Book Now</a></nav>
         <button class="menu-toggle" data-testid="mobile-nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
       </header>
 
       <main>
-        <section class="hero-section" id="home" data-testid="hero-section">
+        <section id="hero-section" class="hero-section" data-testid="hero-section">
           <div class="hero-content">
-            <div class="hero-badge">Product</div>
-            <h1 class="hero-title" id="page-title">barber shop app</h1>
-            <p class="hero-subtitle">Allow customers to book appointments online</p>
+            <div class="hero-badge">Book Online</div>
+            <h1 class="hero-title" id="page-title">Your Next Great&nbsp;Cut, One Click Away</h1>
+            <p class="hero-subtitle">Skip the phone tag. Book your appointment with Classic Cut Barbershop in seconds — choose your stylist, pick a time, and you're set.</p>
             <div class="hero-actions">
-              <a class="btn-primary" href="#features" data-testid="primary-cta">Get Started</a>
-              <button class="btn-secondary" type="button" data-testid="interactive-demo">See Demo</button>
+              <a class="btn-primary" href="#book" data-testid="primary-cta">Book an Appointment</a>
+              <button class="btn-secondary" type="button" data-testid="interactive-demo">See How It Works</button>
             </div>
           </div>
           <div class="hero-visual">
@@ -39,10 +39,13 @@
               <div class="hero-app-body">
                 <div class="hero-app-sidebar">
                   <div class="hero-nav-item">Home</div>
+                  <div class="hero-nav-item">Book</div>
+                  <div class="hero-nav-item">Services</div>
                 </div>
                 <div class="hero-app-content">
                   <div class="wire-block-lg"></div>
                   <div class="wire-row"><div class="wire-block-sm"></div><div class="wire-block-sm"></div></div>
+                  <div class="wire-row"><div class="wire-block-sm"></div></div>
                 </div>
               </div>
             </div>
@@ -50,57 +53,58 @@
         </section>
 
         <section class="social-proof" id="audience">
-          <span class="audience-label">Built for</span>
-          <span class="audience-tag">existing customers of the barber shop who want to book appointments online</span>
+          <span class="audience-label">Trusted by</span>
+          <span class="audience-tag">Regulars who want to skip the call</span>
+          <span class="audience-tag">Walk-ins planning ahead</span>
+          <span class="audience-tag">New customers exploring services</span>
         </section>
 
-        
         <section class="problem-section" id="problem">
-          <div class="section-label">The Problem</div>
-          <h2 class="problem-text">Difficulty calling the barber shop to book an appointment</h2>
+          <div class="section-label">Why Book Online</div>
+          <h2 class="problem-text">Stop playing phone tag — see real availability and lock in your slot instantly, any time of day.</h2>
         </section>
 
         <section class="features-section" id="features" data-testid="feature-grid">
           <div class="section-header"><div class="section-label">Features</div><h2 class="section-title">Everything you need</h2></div>
           <div class="features-grid">
-      <div class="feature-card">
-        <span class="feature-icon">&#10024;</span>
-        <h3>Responsive layout</h3>
-        <p class="feature-desc">Designed for existing customers of the barber shop who want to book appointments online.</p>
-      </div></div>
+            <div class="feature-card">
+              <span class="feature-icon">&#128197;</span>
+              <h3>Real-time availability</h3>
+              <p class="feature-desc">See open slots the moment you land on the page — no back-and-forth required.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">&#9986;</span>
+              <h3>Choose your stylist</h3>
+              <p class="feature-desc">Pick the barber you trust. Preferences are saved for your next visit.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">&#128241;</span>
+              <h3>Works on any device</h3>
+              <p class="feature-desc">Book from your phone on the way to work or from your desk at home.</p>
+            </div>
+          </div>
         </section>
 
-        
-        <section class="screens-section" id="screens">
-          <div class="section-header"><div class="section-label">Screens</div><h2 class="section-title">Key Pages</h2></div>
-          <div class="screens-showcase">
-    <div class="screen-card">
-      <div class="screen-preview">
-        <div class="screen-dots"><span></span><span></span><span></span></div>
-        <div class="screen-wireframe">
-          <div class="wire-header"></div>
-          <div class="wire-row"><div class="wire-block-lg"></div><div class="wire-block-sm"></div></div>
-          <div class="wire-row"><div class="wire-block-sm"></div><div class="wire-block-sm"></div><div class="wire-block-sm"></div></div>
-        </div>
-      </div>
-      <p class="screen-name">Home</p>
-    </div></div>
+        <section class="booking-section" id="book">
+          <div class="section-header"><div class="section-label">Appointments</div><h2 class="section-title">Book your visit</h2></div>
+          <div class="booking-placeholder">
+            <p class="booking-note">Online booking coming soon — meanwhile, call us or walk in!</p>
+            <a class="btn-primary" href="tel:+10000000000">&#128222;&nbsp; Call to Book</a>
+          </div>
         </section>
-
-        
 
         <section class="cta-section" id="primary-cta">
           <div class="cta-inner">
-            <h2>Ready to build?</h2>
-            <p>Tailored and concrete</p>
-            <a class="btn-primary btn-large" href="#home">Get Started Free</a>
+            <h2>Ready for your next cut?</h2>
+            <p>Fresh styles, skilled hands, no waiting on hold.</p>
+            <a class="btn-primary btn-large" href="#book">Book an Appointment</a>
           </div>
         </section>
       </main>
 
       <footer class="app-footer" data-testid="footer-section">
-        <div class="footer-brand"><div class="brand-mark brand-mark-sm">b</div><span class="brand-name">barber shop app</span></div>
-        <div class="footer-links"><a href="#home">Home</a></div>
+        <div class="footer-brand"><div class="brand-mark brand-mark-sm">&#9988;</div><span class="brand-name">Classic Cut Barbershop</span></div>
+        <div class="footer-links"><a href="#hero-section">Home</a><a href="#book">Book</a><a href="#features">Services</a></div>
       </footer>
     </div>
     <script src="./script.js"></script>

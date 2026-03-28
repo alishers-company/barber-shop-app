@@ -10,10 +10,12 @@ menuButton?.addEventListener('click', () => {
 });
 
 demoBtn?.addEventListener('click', () => {
-  demoBtn.textContent = 'Launching... \u2713';
+  demoBtn.textContent = 'See How It Works \u2713';
   demoBtn.style.borderColor = 'var(--accent)';
   demoBtn.style.color = 'var(--accent)';
   demoBtn.disabled = true;
+  const bookSection = document.querySelector('#book');
+  if (bookSection) bookSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 // Scroll-triggered fade-in
